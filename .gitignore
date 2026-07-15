@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# My Project
+/node_modules/
+/package-lock.json
+/package.json
+/frontend/node_modules/
+/frontend/.next/
+/frontend/*.log
+/frontend/tsconfig.tsbuildinfo
+/backend/*.log
+devnet-keypair.json
+solana_wallet_private_key.txt
+.env
+
