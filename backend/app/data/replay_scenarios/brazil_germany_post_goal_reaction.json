@@ -1,0 +1,79 @@
+{
+  "name": "Brazil vs Germany - post-goal reaction",
+  "description": "Demo scenario where Brazil probability reprices after a goal event.",
+  "fixture_id": "demo-bra-ger-001",
+  "events": [
+    {
+      "offset_ms": 0,
+      "event_type": "score",
+      "payload": {
+        "FixtureId": "demo-bra-ger-001",
+        "Ts": "2026-07-09T13:00:00Z",
+        "Action": "match_started",
+        "Participant1Score": 0,
+        "Participant2Score": 0,
+        "GameState": "1H"
+      }
+    },
+    {
+      "offset_ms": 5000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-bra-ger-001",
+        "MessageId": "bra-odds-001",
+        "Ts": "2026-07-09T13:00:05Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Brazil"],
+        "Prices": [2.22],
+        "Pct": [45.0]
+      }
+    },
+    {
+      "offset_ms": 120000,
+      "event_type": "score",
+      "payload": {
+        "FixtureId": "demo-bra-ger-001",
+        "Ts": "2026-07-09T13:02:00Z",
+        "Action": "goal_brazil",
+        "Participant1Score": 1,
+        "Participant2Score": 0,
+        "GameState": "1H"
+      }
+    },
+    {
+      "offset_ms": 150000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-bra-ger-001",
+        "MessageId": "bra-odds-002",
+        "Ts": "2026-07-09T13:02:30Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Brazil"],
+        "Prices": [2.08],
+        "Pct": [48.0]
+      }
+    },
+    {
+      "offset_ms": 230000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-bra-ger-001",
+        "MessageId": "bra-odds-003",
+        "Ts": "2026-07-09T13:03:50Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Brazil"],
+        "Prices": [1.87],
+        "Pct": [53.5]
+      }
+    }
+  ]
+}

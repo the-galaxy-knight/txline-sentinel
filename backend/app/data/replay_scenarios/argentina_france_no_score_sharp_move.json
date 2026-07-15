@@ -1,0 +1,87 @@
+{
+  "name": "Argentina vs France - sharp no-score movement",
+  "description": "Demo scenario where Argentina probability moves sharply while the score remains 0-0.",
+  "fixture_id": "demo-arg-fra-001",
+  "events": [
+    {
+      "offset_ms": 0,
+      "event_type": "score",
+      "payload": {
+        "FixtureId": "demo-arg-fra-001",
+        "Ts": "2026-07-09T12:00:00Z",
+        "Action": "match_started",
+        "Participant1Score": 0,
+        "Participant2Score": 0,
+        "GameState": "1H"
+      }
+    },
+    {
+      "offset_ms": 1000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-arg-fra-001",
+        "MessageId": "arg-odds-001",
+        "Ts": "2026-07-09T12:00:01Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "GameState": "1H",
+        "PriceNames": ["Argentina"],
+        "Prices": [1.92],
+        "Pct": [52.1]
+      }
+    },
+    {
+      "offset_ms": 61000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-arg-fra-001",
+        "MessageId": "arg-odds-002",
+        "Ts": "2026-07-09T12:01:01Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "GameState": "1H",
+        "PriceNames": ["Argentina"],
+        "Prices": [1.83],
+        "Pct": [54.5]
+      }
+    },
+    {
+      "offset_ms": 181000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-arg-fra-001",
+        "MessageId": "arg-odds-003",
+        "Ts": "2026-07-09T12:03:01Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "GameState": "1H",
+        "PriceNames": ["Argentina"],
+        "Prices": [1.73],
+        "Pct": [57.8]
+      }
+    },
+    {
+      "offset_ms": 301000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-arg-fra-001",
+        "MessageId": "arg-odds-004",
+        "Ts": "2026-07-09T12:05:01Z",
+        "Bookmaker": "DemoBook",
+        "BookmakerId": "demo-book-1",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "GameState": "1H",
+        "PriceNames": ["Argentina"],
+        "Prices": [1.63],
+        "Pct": [61.4]
+      }
+    }
+  ]
+}

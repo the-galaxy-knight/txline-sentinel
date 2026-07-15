@@ -1,0 +1,83 @@
+{
+  "name": "Spain vs Portugal - bookmaker divergence",
+  "description": "Demo scenario where one bookmaker moves ahead of consensus before the market follows.",
+  "fixture_id": "demo-esp-por-001",
+  "events": [
+    {
+      "offset_ms": 0,
+      "event_type": "score",
+      "payload": {
+        "FixtureId": "demo-esp-por-001",
+        "Ts": "2026-07-09T14:00:00Z",
+        "Action": "match_started",
+        "Participant1Score": 0,
+        "Participant2Score": 0,
+        "GameState": "1H"
+      }
+    },
+    {
+      "offset_ms": 1000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-esp-por-001",
+        "MessageId": "esp-book-a-001",
+        "Ts": "2026-07-09T14:00:01Z",
+        "Bookmaker": "Book A",
+        "BookmakerId": "book-a",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Spain"],
+        "Prices": [2.0],
+        "Pct": [50.0]
+      }
+    },
+    {
+      "offset_ms": 2000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-esp-por-001",
+        "MessageId": "esp-book-b-001",
+        "Ts": "2026-07-09T14:00:02Z",
+        "Bookmaker": "Book B",
+        "BookmakerId": "book-b",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Spain"],
+        "Prices": [2.0],
+        "Pct": [50.0]
+      }
+    },
+    {
+      "offset_ms": 61000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-esp-por-001",
+        "MessageId": "esp-book-a-002",
+        "Ts": "2026-07-09T14:01:01Z",
+        "Bookmaker": "Book A",
+        "BookmakerId": "book-a",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Spain"],
+        "Prices": [1.72],
+        "Pct": [58.0]
+      }
+    },
+    {
+      "offset_ms": 181000,
+      "event_type": "odds",
+      "payload": {
+        "FixtureId": "demo-esp-por-001",
+        "MessageId": "esp-book-b-002",
+        "Ts": "2026-07-09T14:03:01Z",
+        "Bookmaker": "Book B",
+        "BookmakerId": "book-b",
+        "SuperOddsType": "match_winner",
+        "MarketPeriod": "full_time",
+        "PriceNames": ["Spain"],
+        "Prices": [1.79],
+        "Pct": [56.0]
+      }
+    }
+  ]
+}
