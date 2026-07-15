@@ -1,0 +1,17 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: local
+      DATABASE_URL: sqlite:////data/txline_sentinel.db
+      INGESTION_MODE: disabled
+      REPLAY_SCENARIOS_DIR: app/data/replay_scenarios
+    volumes:
+      - txline-sentinel-data:/data
+
+volumes:
+  txline-sentinel-data:
